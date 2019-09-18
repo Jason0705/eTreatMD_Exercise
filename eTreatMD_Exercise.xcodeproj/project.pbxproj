@@ -17,14 +17,16 @@
 		822DC04C2332A1250056D788 /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC04B2332A1250056D788 /* Treatment.swift */; };
 		822DC04E2332A1480056D788 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC04D2332A1480056D788 /* Patient.swift */; };
 		822DC0542332BC480056D788 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC0532332BC480056D788 /* UIImageView+Extension.swift */; };
-		822DC0562332BF420056D788 /* Treatments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC0552332BF420056D788 /* Treatments.storyboard */; };
 		822DC0582332BF7B0056D788 /* TreatmentsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC0572332BF7B0056D788 /* TreatmentsVC.swift */; };
 		822DC05A2332BF8D0056D788 /* BodyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC0592332BF8D0056D788 /* BodyVC.swift */; };
 		822DC05C2332BF9F0056D788 /* PatientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC05B2332BF9F0056D788 /* PatientsVC.swift */; };
 		822DC0602332BFF10056D788 /* PatientInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC05F2332BFF10056D788 /* PatientInfoVC.swift */; };
 		822DC0622332C0430056D788 /* Body.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC0612332C0430056D788 /* Body.storyboard */; };
-		822DC0642332C0930056D788 /* Paitents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC0632332C0930056D788 /* Paitents.storyboard */; };
 		822DC0662332C23A0056D788 /* PatientInfo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC0652332C23A0056D788 /* PatientInfo.storyboard */; };
+		822DC06A2332C3C10056D788 /* PatientsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC0692332C3C10056D788 /* PatientsService.swift */; };
+		822DC06C2332C3E30056D788 /* TreatmentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC06B2332C3E30056D788 /* TreatmentsService.swift */; };
+		822DC06E2332C8F40056D788 /* Treatments.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC06D2332C8F40056D788 /* Treatments.storyboard */; };
+		822DC0702332CA7E0056D788 /* Patients.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC06F2332CA7E0056D788 /* Patients.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,14 +41,16 @@
 		822DC04B2332A1250056D788 /* Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
 		822DC04D2332A1480056D788 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		822DC0532332BC480056D788 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
-		822DC0552332BF420056D788 /* Treatments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Treatments.storyboard; sourceTree = "<group>"; };
 		822DC0572332BF7B0056D788 /* TreatmentsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentsVC.swift; sourceTree = "<group>"; };
 		822DC0592332BF8D0056D788 /* BodyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyVC.swift; sourceTree = "<group>"; };
 		822DC05B2332BF9F0056D788 /* PatientsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsVC.swift; sourceTree = "<group>"; };
 		822DC05F2332BFF10056D788 /* PatientInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientInfoVC.swift; sourceTree = "<group>"; };
 		822DC0612332C0430056D788 /* Body.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Body.storyboard; sourceTree = "<group>"; };
-		822DC0632332C0930056D788 /* Paitents.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Paitents.storyboard; sourceTree = "<group>"; };
 		822DC0652332C23A0056D788 /* PatientInfo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PatientInfo.storyboard; sourceTree = "<group>"; };
+		822DC0692332C3C10056D788 /* PatientsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientsService.swift; sourceTree = "<group>"; };
+		822DC06B2332C3E30056D788 /* TreatmentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentsService.swift; sourceTree = "<group>"; };
+		822DC06D2332C8F40056D788 /* Treatments.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Treatments.storyboard; sourceTree = "<group>"; };
+		822DC06F2332CA7E0056D788 /* Patients.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Patients.storyboard; sourceTree = "<group>"; };
 		B4E2A3C534CD12C8311BF52C /* Pods_eTreatMD_Exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTreatMD_Exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19D0C0C377E37244327EE41 /* Pods-eTreatMD_Exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTreatMD_Exercise.debug.xcconfig"; path = "Target Support Files/Pods-eTreatMD_Exercise/Pods-eTreatMD_Exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		FDD79D14FE64A3F32800F262 /* Pods-eTreatMD_Exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTreatMD_Exercise.release.xcconfig"; path = "Target Support Files/Pods-eTreatMD_Exercise/Pods-eTreatMD_Exercise.release.xcconfig"; sourceTree = "<group>"; };
@@ -111,9 +115,9 @@
 			children = (
 				822DC03723329C370056D788 /* LaunchScreen.storyboard */,
 				822DC02F23329C350056D788 /* Main.storyboard */,
-				822DC0552332BF420056D788 /* Treatments.storyboard */,
+				822DC06D2332C8F40056D788 /* Treatments.storyboard */,
 				822DC0612332C0430056D788 /* Body.storyboard */,
-				822DC0632332C0930056D788 /* Paitents.storyboard */,
+				822DC06F2332CA7E0056D788 /* Patients.storyboard */,
 				822DC0652332C23A0056D788 /* PatientInfo.storyboard */,
 			);
 			path = Views;
@@ -160,6 +164,8 @@
 		822DC0462332A06C0056D788 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				822DC06B2332C3E30056D788 /* TreatmentsService.swift */,
+				822DC0692332C3C10056D788 /* PatientsService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -287,11 +293,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				822DC0622332C0430056D788 /* Body.storyboard in Resources */,
+				822DC06E2332C8F40056D788 /* Treatments.storyboard in Resources */,
+				822DC0702332CA7E0056D788 /* Patients.storyboard in Resources */,
 				822DC03923329C370056D788 /* LaunchScreen.storyboard in Resources */,
-				822DC0642332C0930056D788 /* Paitents.storyboard in Resources */,
 				822DC03623329C370056D788 /* Assets.xcassets in Resources */,
 				822DC03123329C350056D788 /* Main.storyboard in Resources */,
-				822DC0562332BF420056D788 /* Treatments.storyboard in Resources */,
 				822DC0662332C23A0056D788 /* PatientInfo.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,12 +336,14 @@
 			files = (
 				822DC0542332BC480056D788 /* UIImageView+Extension.swift in Sources */,
 				822DC04A2332A0DE0056D788 /* Reusable.swift in Sources */,
+				822DC06C2332C3E30056D788 /* TreatmentsService.swift in Sources */,
 				822DC0602332BFF10056D788 /* PatientInfoVC.swift in Sources */,
 				822DC0582332BF7B0056D788 /* TreatmentsVC.swift in Sources */,
 				822DC03423329C350056D788 /* eTreatMD_Exercise.xcdatamodeld in Sources */,
 				822DC04C2332A1250056D788 /* Treatment.swift in Sources */,
 				822DC02C23329C350056D788 /* AppDelegate.swift in Sources */,
 				822DC05A2332BF8D0056D788 /* BodyVC.swift in Sources */,
+				822DC06A2332C3C10056D788 /* PatientsService.swift in Sources */,
 				822DC05C2332BF9F0056D788 /* PatientsVC.swift in Sources */,
 				822DC04E2332A1480056D788 /* Patient.swift in Sources */,
 			);

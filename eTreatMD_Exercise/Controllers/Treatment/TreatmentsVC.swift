@@ -12,18 +12,20 @@ class TreatmentsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        getTreatments()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func getTreatments() {
+        TreatmentsService.treatmentsService.getTreatments { (treatments) in
+            guard let treatments = treatments else { return }
+            
+            for treatment in treatments {
+                print("XXX")
+                print(treatment.name)
+                print(treatment.amount)
+                print(treatment.unit)
+            }
+        }
     }
-    */
 
 }

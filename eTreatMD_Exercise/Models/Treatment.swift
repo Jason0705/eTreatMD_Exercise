@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class Treatment: Codable {
+    var name: String?
+    var unit: String?
+    var amount: Int?
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case unit = "unit"
+        case amount = "amount"
+    }
+}

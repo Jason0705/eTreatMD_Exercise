@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class Patient: Codable {
+    var name: String?
+    var id: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case name = "name"
+        case id = "id"
+    }
+}
