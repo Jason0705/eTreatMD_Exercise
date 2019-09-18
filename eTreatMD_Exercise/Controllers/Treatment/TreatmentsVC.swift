@@ -48,7 +48,15 @@ extension TreatmentsVC {
         treatmentsTableView.refreshControl?.beginRefreshing()
         TreatmentsService.treatmentsService.getTreatments { [weak self] (treatments) in
             guard let `self` = self else { return }
-            guard let treatments = treatments else { return }
+            guard let treatments = treatments else {
+                DispatchQueue.main.async {
+                    self.treatmentsTableView.reloadData()
+                    UIView.animate(withDuration: 1.0, animations: {
+                        self.treatmentsTableView.refreshControl?.endRefreshing()
+                    })
+                }
+                return
+            }
             self.treatments = treatments
             DispatchQueue.main.async {
                 self.treatmentsTableView.reloadData()

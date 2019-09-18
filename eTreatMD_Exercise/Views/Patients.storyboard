@@ -17,14 +17,38 @@
                     <view key="view" contentMode="scaleToFill" id="DiT-Sb-smu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Oo-8v-zlO">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4Oo-8v-zlO" firstAttribute="leading" secondItem="9ZB-yB-eW6" secondAttribute="leading" id="EIy-qB-jcI"/>
+                            <constraint firstItem="4Oo-8v-zlO" firstAttribute="top" secondItem="9ZB-yB-eW6" secondAttribute="top" id="YeO-GA-4Wi"/>
+                            <constraint firstItem="9ZB-yB-eW6" firstAttribute="trailing" secondItem="4Oo-8v-zlO" secondAttribute="trailing" id="cXj-9y-6OV"/>
+                            <constraint firstItem="9ZB-yB-eW6" firstAttribute="bottom" secondItem="4Oo-8v-zlO" secondAttribute="bottom" id="rWc-sF-WsN"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="9ZB-yB-eW6"/>
                     </view>
                     <navigationItem key="navigationItem" title="Patients" id="kqK-Nn-uII"/>
+                    <connections>
+                        <outlet property="patientsTableView" destination="4Oo-8v-zlO" id="aAd-0T-DTd"/>
+                        <segue destination="UzS-02-ylo" kind="show" identifier="patientVCToPatientInfoVC" id="pM5-vW-jXu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6th-Ag-hub" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2528.985507246377" y="687.72321428571422"/>
+        </scene>
+        <!--PatientInfoVC-->
+        <scene sceneID="gdQ-SQ-jJh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PatientInfo" referencedIdentifier="PatientInfoVC" id="UzS-02-ylo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I9M-VN-YYt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3180" y="688"/>
         </scene>
         <!--Patients-->
         <scene sceneID="Hca-HL-Q4f">
