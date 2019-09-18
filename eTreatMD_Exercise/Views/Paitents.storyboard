@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="849-U9-61U">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Patients-->
+        <scene sceneID="xTK-tb-ACE">
+            <objects>
+                <viewController storyboardIdentifier="PatientsVC" id="Jy5-j5-3U5" customClass="PatientsVC" customModule="eTreatMD_Exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EFh-WJ-odO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="bef-EM-M5h"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Patients" id="cR4-sJ-A1w" customClass="Patients"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EG0-xn-qke" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2623.1884057971015" y="1086.8303571428571"/>
+        </scene>
+        <!--Patients-->
+        <scene sceneID="Isg-bP-b8C">
+            <objects>
+                <navigationController storyboardIdentifier="PatientsNC" automaticallyAdjustsScrollViewInsets="NO" id="849-U9-61U" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" tag="2" title="Patients" id="EAz-rL-k1f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mMK-7Z-fSb">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Jy5-j5-3U5" kind="relationship" relationship="rootViewController" id="JRw-us-Ear"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IHR-Ms-8bB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1713.0434782608697" y="1086.8303571428571"/>
+        </scene>
+    </scenes>
+</document>
