@@ -7,23 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21C783D50A62C0D8B7279E04 /* Pods_eTreatMD_Exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E2A3C534CD12C8311BF52C /* Pods_eTreatMD_Exercise.framework */; };
 		822DC02C23329C350056D788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC02B23329C350056D788 /* AppDelegate.swift */; };
-		822DC02E23329C350056D788 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC02D23329C350056D788 /* ViewController.swift */; };
 		822DC03123329C350056D788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC02F23329C350056D788 /* Main.storyboard */; };
 		822DC03423329C350056D788 /* eTreatMD_Exercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 822DC03223329C350056D788 /* eTreatMD_Exercise.xcdatamodeld */; };
 		822DC03623329C370056D788 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 822DC03523329C370056D788 /* Assets.xcassets */; };
 		822DC03923329C370056D788 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC03723329C370056D788 /* LaunchScreen.storyboard */; };
+		822DC04A2332A0DE0056D788 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC0492332A0DE0056D788 /* Reusable.swift */; };
+		822DC04C2332A1250056D788 /* Treatment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC04B2332A1250056D788 /* Treatment.swift */; };
+		822DC04E2332A1480056D788 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC04D2332A1480056D788 /* Patient.swift */; };
+		822DC0542332BC480056D788 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC0532332BC480056D788 /* UIImageView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		822DC02823329C350056D788 /* eTreatMD_Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eTreatMD_Exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822DC02B23329C350056D788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		822DC02D23329C350056D788 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		822DC03023329C350056D788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		822DC03323329C350056D788 /* eTreatMD_Exercise.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = eTreatMD_Exercise.xcdatamodel; sourceTree = "<group>"; };
 		822DC03523329C370056D788 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		822DC03823329C370056D788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		822DC03A23329C370056D788 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		822DC0492332A0DE0056D788 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		822DC04B2332A1250056D788 /* Treatment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treatment.swift; sourceTree = "<group>"; };
+		822DC04D2332A1480056D788 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		822DC0532332BC480056D788 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		B4E2A3C534CD12C8311BF52C /* Pods_eTreatMD_Exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTreatMD_Exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E19D0C0C377E37244327EE41 /* Pods-eTreatMD_Exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTreatMD_Exercise.debug.xcconfig"; path = "Target Support Files/Pods-eTreatMD_Exercise/Pods-eTreatMD_Exercise.debug.xcconfig"; sourceTree = "<group>"; };
+		FDD79D14FE64A3F32800F262 /* Pods-eTreatMD_Exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTreatMD_Exercise.release.xcconfig"; path = "Target Support Files/Pods-eTreatMD_Exercise/Pods-eTreatMD_Exercise.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21C783D50A62C0D8B7279E04 /* Pods_eTreatMD_Exercise.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				822DC02A23329C350056D788 /* eTreatMD_Exercise */,
 				822DC02923329C350056D788 /* Products */,
+				DA4A075E0E022915BA3A4A01 /* Pods */,
+				BE28892971BB9E1155B24B20 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +70,138 @@
 			isa = PBXGroup;
 			children = (
 				822DC02B23329C350056D788 /* AppDelegate.swift */,
-				822DC02D23329C350056D788 /* ViewController.swift */,
-				822DC02F23329C350056D788 /* Main.storyboard */,
-				822DC03523329C370056D788 /* Assets.xcassets */,
-				822DC03723329C370056D788 /* LaunchScreen.storyboard */,
+				822DC04023329FC80056D788 /* Models */,
+				822DC04123329FD70056D788 /* Views */,
+				822DC04223329FDE0056D788 /* Controllers */,
+				822DC04323329FEC0056D788 /* Utilities */,
+				822DC0442332A00E0056D788 /* Designs */,
+				822DC0452332A04E0056D788 /* CoreData */,
 				822DC03A23329C370056D788 /* Info.plist */,
-				822DC03223329C350056D788 /* eTreatMD_Exercise.xcdatamodeld */,
 			);
 			path = eTreatMD_Exercise;
+			sourceTree = "<group>";
+		};
+		822DC04023329FC80056D788 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				822DC04B2332A1250056D788 /* Treatment.swift */,
+				822DC04D2332A1480056D788 /* Patient.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		822DC04123329FD70056D788 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				822DC03723329C370056D788 /* LaunchScreen.storyboard */,
+				822DC02F23329C350056D788 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		822DC04223329FDE0056D788 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				822DC04F2332A1530056D788 /* Treatment */,
+				822DC0502332BBB80056D788 /* Body */,
+				822DC0512332BBC20056D788 /* Patient */,
+				822DC0522332BBEE0056D788 /* Patient Info */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		822DC04323329FEC0056D788 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				822DC0482332A0880056D788 /* CustomCells */,
+				822DC0472332A0800056D788 /* Extensions */,
+				822DC0462332A06C0056D788 /* Services */,
+				822DC0492332A0DE0056D788 /* Reusable.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		822DC0442332A00E0056D788 /* Designs */ = {
+			isa = PBXGroup;
+			children = (
+				822DC03523329C370056D788 /* Assets.xcassets */,
+			);
+			path = Designs;
+			sourceTree = "<group>";
+		};
+		822DC0452332A04E0056D788 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				822DC03223329C350056D788 /* eTreatMD_Exercise.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		822DC0462332A06C0056D788 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		822DC0472332A0800056D788 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				822DC0532332BC480056D788 /* UIImageView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		822DC0482332A0880056D788 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		822DC04F2332A1530056D788 /* Treatment */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Treatment;
+			sourceTree = "<group>";
+		};
+		822DC0502332BBB80056D788 /* Body */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Body;
+			sourceTree = "<group>";
+		};
+		822DC0512332BBC20056D788 /* Patient */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Patient;
+			sourceTree = "<group>";
+		};
+		822DC0522332BBEE0056D788 /* Patient Info */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Patient Info";
+			sourceTree = "<group>";
+		};
+		BE28892971BB9E1155B24B20 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4E2A3C534CD12C8311BF52C /* Pods_eTreatMD_Exercise.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA4A075E0E022915BA3A4A01 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E19D0C0C377E37244327EE41 /* Pods-eTreatMD_Exercise.debug.xcconfig */,
+				FDD79D14FE64A3F32800F262 /* Pods-eTreatMD_Exercise.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +211,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 822DC03D23329C370056D788 /* Build configuration list for PBXNativeTarget "eTreatMD_Exercise" */;
 			buildPhases = (
+				BFE0D95CFB7BDDF5F70FCDC7 /* [CP] Check Pods Manifest.lock */,
 				822DC02423329C350056D788 /* Sources */,
 				822DC02523329C350056D788 /* Frameworks */,
 				822DC02623329C350056D788 /* Resources */,
@@ -132,14 +270,42 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BFE0D95CFB7BDDF5F70FCDC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-eTreatMD_Exercise-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		822DC02423329C350056D788 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				822DC02E23329C350056D788 /* ViewController.swift in Sources */,
+				822DC0542332BC480056D788 /* UIImageView+Extension.swift in Sources */,
+				822DC04A2332A0DE0056D788 /* Reusable.swift in Sources */,
 				822DC03423329C350056D788 /* eTreatMD_Exercise.xcdatamodeld in Sources */,
+				822DC04C2332A1250056D788 /* Treatment.swift in Sources */,
 				822DC02C23329C350056D788 /* AppDelegate.swift in Sources */,
+				822DC04E2332A1480056D788 /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +449,7 @@
 		};
 		822DC03E23329C370056D788 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E19D0C0C377E37244327EE41 /* Pods-eTreatMD_Exercise.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +468,7 @@
 		};
 		822DC03F23329C370056D788 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FDD79D14FE64A3F32800F262 /* Pods-eTreatMD_Exercise.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
