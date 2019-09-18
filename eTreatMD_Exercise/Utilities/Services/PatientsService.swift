@@ -30,7 +30,7 @@ class PatientsService {
                     completion(nil)
                 } else if let data = data {
                     do {
-                        print("DATA: \(String(data: data, encoding: .utf8)!)")
+//                        print("DATA: \(String(data: data, encoding: .utf8)!)")
                         let patients = try JSONDecoder().decode([Patient].self, from: data)
                         completion(patients)
                     } catch let error {

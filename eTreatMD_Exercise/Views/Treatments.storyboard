@@ -17,10 +17,25 @@
                     <view key="view" contentMode="scaleToFill" id="I5h-gz-nBP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="JaH-JG-OxV">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JaH-JG-OxV" firstAttribute="top" secondItem="r2y-ln-p5g" secondAttribute="top" id="4tl-cg-adF"/>
+                            <constraint firstItem="r2y-ln-p5g" firstAttribute="bottom" secondItem="JaH-JG-OxV" secondAttribute="bottom" id="NqB-x9-x5E"/>
+                            <constraint firstItem="r2y-ln-p5g" firstAttribute="trailing" secondItem="JaH-JG-OxV" secondAttribute="trailing" id="rdL-8O-jyj"/>
+                            <constraint firstItem="JaH-JG-OxV" firstAttribute="leading" secondItem="r2y-ln-p5g" secondAttribute="leading" id="ve8-43-SCd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="r2y-ln-p5g"/>
                     </view>
                     <navigationItem key="navigationItem" title="Treatments" id="l47-dN-4BB"/>
+                    <connections>
+                        <outlet property="treatmentsTableView" destination="JaH-JG-OxV" id="hx2-fQ-Rtf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mjV-5q-3wS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
