@@ -6,11 +6,13 @@
 //
 
 import UIKit
+import CoreData
 
 class PatientInfoVC: UIViewController {
     //-----------------
     // MARK: - Variables
     //-----------------
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     var patient: Patient?
     
     //-----------------
@@ -35,6 +37,7 @@ class PatientInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUp()
+        fetchImage()
     }
     
     func setUp() {
@@ -84,6 +87,9 @@ extension PatientInfoVC {
 //-----------------
 extension PatientInfoVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        dismiss(animated: true, completion: nil)
+        
         guard let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage else {
             dismiss(animated: true) {
                 AlertService.alertService.presentErrorAlert(title: "Oops", message: "Your action was unsuccessful.\nPlease try again.")
@@ -91,7 +97,43 @@ extension PatientInfoVC: UIImagePickerControllerDelegate, UINavigationController
             return
         }
         photoImageView.image = image
-        dismiss(animated: true, completion: nil)
+        
+        // Save Image On Device
+        if let patientID = patient?.id {
+            let fileManager = FileManager.default
+            let documentsURL = fileManager.urls(for: .documentDirectory, in: .userDomainMask).first!
+            let documentPath = documentsURL.path
+            let filePath = documentsURL.appendingPathComponent("\(patientID).png")
+            
+            do {
+                let files = try fileManager.contentsOfDirectory(atPath: "\(documentPath)")
+                
+                for file in files {
+                    if "\(documentPath)/\(file)" == filePath.path {
+                        try fileManager.removeItem(atPath: filePath.path)
+                    }
+                }
+            } catch {
+                print("Could not add image from document directory: \(error)")
+            }
+            
+            do {
+                if let jpegImageData = image.jpegData(compressionQuality: 0.5) {
+                    try jpegImageData.write(to: filePath, options: .atomic)
+                }
+            } catch {
+                print("couldn't write image")
+            }
+            
+            let container = appDelegate.persistentContainer
+            let context = container.viewContext
+            let entity = Image(context: context)
+            entity.filePath = filePath.path
+            
+            appDelegate.saveContext()
+        }
+        
+        
     }
 }
 
@@ -116,6 +158,25 @@ extension PatientInfoVC {
             imagePicker.sourceType = .photoLibrary
             imagePicker.allowsEditing = true
             self.present(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func fetchImage() {
+        let container = appDelegate.persistentContainer
+        let context = container.viewContext
+        let fetchRequest = NSFetchRequest<Image>(entityName: "Image")
+        
+        do {
+            let images = try context.fetch(fetchRequest)
+            for image in images {
+                if let patientID = patient?.id, let filePath = image.filePath, filePath.contains(patientID) {
+                    if FileManager.default.fileExists(atPath: filePath), let contentsOfFilePath = UIImage(contentsOfFile: filePath) {
+                        photoImageView.image = contentsOfFilePath
+                    }
+                }
+            }
+        } catch {
+            print("entered catch for image fetch request")
         }
     }
 }

@@ -11,7 +11,8 @@ class TreatmentsService {
     
     static var treatmentsService = TreatmentsService()
     
-    private let TREATMENTS_URL_STRING = "https://api.myjson.com/bins/rr2ed"
+    private let TREATMENTS_URL_STRING = "https://test.livewithacne.com/media/steps/treatment.json"
+    private let SECONDARY_TREATMENTS_URL_STRING = "https://api.myjson.com/bins/rr2ed"
     
     func getTreatments(completion: @escaping ([Treatment]?) -> Void) {
         guard let url = URL(string: TREATMENTS_URL_STRING) else {

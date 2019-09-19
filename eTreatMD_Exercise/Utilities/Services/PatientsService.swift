@@ -11,7 +11,8 @@ class PatientsService {
     
     static var patientsService = PatientsService()
     
-    private let PATIENTS_URL_STRING = "https://api.myjson.com/bins/zhp9h"
+    private let PATIENTS_URL_STRING = "https://test.livewithacne.com/media/steps/patients.json"
+    private let SECONDARY_PATIENTS_URL_STRING = "https://api.myjson.com/bins/zhp9h"
     
     func getPatients(completion: @escaping ([Patient]?) -> Void) {
         guard let url = URL(string: PATIENTS_URL_STRING) else {
