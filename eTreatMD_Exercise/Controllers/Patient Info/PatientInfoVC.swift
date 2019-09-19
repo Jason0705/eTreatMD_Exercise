@@ -50,6 +50,21 @@ class PatientInfoVC: UIViewController {
 }
 
 //-----------------
+// MARK: - Touches
+//-----------------
+extension PatientInfoVC {
+    @objc func photoImageTapped() {
+        AlertService.alertService.presentPhotoActionSheet(openCamera: { [weak self] in
+            guard let `self` = self else { return }
+            self.openCamera()
+        }) { [weak self] in
+            guard let `self` = self else { return }
+            self.openPhotoLibrary()
+        }
+    }
+}
+
+//-----------------
 // MARK: - IBActions
 //-----------------
 extension PatientInfoVC {
@@ -84,16 +99,6 @@ extension PatientInfoVC: UIImagePickerControllerDelegate, UINavigationController
 // MARK: - Functions
 //-----------------
 extension PatientInfoVC {
-    @objc func photoImageTapped() {
-        AlertService.alertService.presentPhotoActionSheet(openCamera: { [weak self] in
-            guard let `self` = self else { return }
-            self.openCamera()
-        }) { [weak self] in
-            guard let `self` = self else { return }
-            self.openPhotoLibrary()
-        }
-    }
-    
     func openCamera() {
         if UIImagePickerController.isSourceTypeAvailable(.camera) {
             let imagePicker = UIImagePickerController()

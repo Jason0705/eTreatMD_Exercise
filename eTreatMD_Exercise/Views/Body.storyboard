@@ -37,14 +37,14 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="VfM-Vs-lp7">
                                                         <rect key="frame" x="177" y="56" width="60" height="20"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLp-MG-zdb">
+                                                            <view tag="4" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mLp-MG-zdb" userLabel="Right Jaw">
                                                                 <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="mLp-MG-zdb" secondAttribute="height" multiplier="1:1" id="S9N-hK-jbr"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCF-lT-Yta">
+                                                            <view tag="5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zCF-lT-Yta" userLabel="Left Jaw">
                                                                 <rect key="frame" x="40" y="0.0" width="20" height="20"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
@@ -57,7 +57,7 @@
                                                             <constraint firstAttribute="width" secondItem="VfM-Vs-lp7" secondAttribute="height" multiplier="60:20" id="bbx-bq-eqi"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-WR-HJT">
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-WR-HJT" userLabel="Neck">
                                                         <rect key="frame" x="190" y="76" width="34" height="37"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -67,24 +67,26 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="rdS-Nl-ujz">
                                                         <rect key="frame" x="115" y="113" width="184" height="30"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNd-tV-b3t">
+                                                            <view tag="6" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNd-tV-b3t" userLabel="Right Shoulder">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="VNd-tV-b3t" secondAttribute="height" multiplier="1:1" id="aGZ-FZ-zRi"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-H8-nYR">
+                                                            <view tag="7" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-H8-nYR" userLabel="Left Shoulder">
                                                                 <rect key="frame" x="154" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="K5n-H8-nYR" secondAttribute="height" multiplier="1:1" id="ozm-pW-md8"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="K5n-H8-nYR" firstAttribute="width" secondItem="K5n-H8-nYR" secondAttribute="height" multiplier="1:1" id="313-I1-djK"/>
                                                             <constraint firstAttribute="width" secondItem="rdS-Nl-ujz" secondAttribute="height" multiplier="92:15" id="5ZA-Ks-oXz"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isr-gp-Gu6">
+                                                    <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="isr-gp-Gu6" userLabel="Chest">
                                                         <rect key="frame" x="190" y="143" width="34" height="59"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -94,24 +96,26 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="H2x-9H-zUC">
                                                         <rect key="frame" x="90" y="202" width="234" height="30"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC4-Mz-93e">
+                                                            <view tag="8" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DC4-Mz-93e" userLabel="Right Elbow">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="DC4-Mz-93e" secondAttribute="height" multiplier="1:1" id="CPt-c5-qwY"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xz0-wB-wq1">
+                                                            <view tag="9" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xz0-wB-wq1" userLabel="Left Elbow">
                                                                 <rect key="frame" x="204" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="xz0-wB-wq1" secondAttribute="height" multiplier="1:1" id="qjm-6Q-zw2"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="H2x-9H-zUC" secondAttribute="height" multiplier="39:5" id="JbN-eL-LRG"/>
-                                                            <constraint firstItem="xz0-wB-wq1" firstAttribute="width" secondItem="xz0-wB-wq1" secondAttribute="height" multiplier="1:1" id="ZYb-Zf-0kS"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aau-WP-6tC">
+                                                    <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aau-WP-6tC" userLabel="Waist">
                                                         <rect key="frame" x="190" y="232" width="34" height="56"/>
                                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
@@ -121,81 +125,89 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="GTC-FP-WJT">
                                                         <rect key="frame" x="60" y="288" width="294" height="30"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV6-b0-ZVD">
+                                                            <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IV6-b0-ZVD" userLabel="Right Hand">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="IV6-b0-ZVD" secondAttribute="height" multiplier="1:1" id="Pei-m0-Veu"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyw-FE-BKx">
+                                                            <view tag="11" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jyw-FE-BKx" userLabel="Left Hand">
                                                                 <rect key="frame" x="264" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="jyw-FE-BKx" secondAttribute="height" multiplier="1:1" id="WXS-Yd-BeF"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="GTC-FP-WJT" secondAttribute="height" multiplier="49:5" id="515-xo-Mso"/>
-                                                            <constraint firstItem="jyw-FE-BKx" firstAttribute="width" secondItem="jyw-FE-BKx" secondAttribute="height" multiplier="1:1" id="mAU-HD-Ygy"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="4Ap-tW-qDs">
                                                         <rect key="frame" x="151" y="318" width="112" height="30"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QP7-Y4-SCl">
+                                                            <view tag="12" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QP7-Y4-SCl" userLabel="Right Hip">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="QP7-Y4-SCl" secondAttribute="height" multiplier="1:1" id="Cte-dP-rk2"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMv-Qn-Do5">
+                                                            <view tag="13" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YMv-Qn-Do5" userLabel="Left Hip">
                                                                 <rect key="frame" x="82" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="YMv-Qn-Do5" secondAttribute="height" multiplier="1:1" id="Obt-3g-nAL"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="YMv-Qn-Do5" firstAttribute="width" secondItem="YMv-Qn-Do5" secondAttribute="height" multiplier="1:1" id="C2d-Cw-pc6"/>
                                                             <constraint firstAttribute="width" secondItem="4Ap-tW-qDs" secondAttribute="height" multiplier="56:15" id="i0l-ni-aZm"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="gGo-Qx-0xQ">
                                                         <rect key="frame" x="135" y="471" width="144" height="30"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co3-XL-6XZ">
+                                                            <view tag="14" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co3-XL-6XZ" userLabel="Right Knee">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="co3-XL-6XZ" secondAttribute="height" multiplier="1:1" id="gQr-31-d2g"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hp-P2-Mr2">
+                                                            <view tag="15" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1hp-P2-Mr2" userLabel="Left Knee">
                                                                 <rect key="frame" x="114" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="1hp-P2-Mr2" secondAttribute="height" multiplier="1:1" id="k9Z-kA-hq6"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="1hp-P2-Mr2" firstAttribute="width" secondItem="1hp-P2-Mr2" secondAttribute="height" multiplier="1:1" id="XHl-AH-md8"/>
                                                             <constraint firstAttribute="width" secondItem="gGo-Qx-0xQ" secondAttribute="height" multiplier="24:5" id="lVj-bN-WX6"/>
                                                         </constraints>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="nDW-dl-xCa">
                                                         <rect key="frame" x="125" y="595" width="164" height="30"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfv-lk-ZQX">
+                                                            <view tag="16" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfv-lk-ZQX" userLabel="Right Ankle">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="Gfv-lk-ZQX" secondAttribute="height" multiplier="1:1" id="uxo-V6-avy"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUA-78-gWl">
+                                                            <view tag="17" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUA-78-gWl" userLabel="Left Ankle">
                                                                 <rect key="frame" x="134" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="wUA-78-gWl" secondAttribute="height" multiplier="1:1" id="4ro-o0-dEU"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="nDW-dl-xCa" secondAttribute="height" multiplier="82:15" id="a2g-Kd-P1d"/>
-                                                            <constraint firstItem="wUA-78-gWl" firstAttribute="width" secondItem="wUA-78-gWl" secondAttribute="height" multiplier="1:1" id="qqi-cV-IpN"/>
                                                         </constraints>
                                                     </stackView>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnH-5j-dxw">
@@ -208,20 +220,22 @@
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="9da-mX-1L0">
                                                         <rect key="frame" x="107" y="633" width="200" height="30"/>
                                                         <subviews>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1t0-aP-L18">
+                                                            <view tag="18" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1t0-aP-L18" userLabel="Right Foot">
                                                                 <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="1t0-aP-L18" secondAttribute="height" multiplier="1:1" id="0yr-8c-K1L"/>
                                                                 </constraints>
                                                             </view>
-                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F94-LQ-aZ8">
+                                                            <view tag="19" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F94-LQ-aZ8" userLabel="Left Foot">
                                                                 <rect key="frame" x="170" y="0.0" width="30" height="30"/>
                                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="F94-LQ-aZ8" secondAttribute="height" multiplier="1:1" id="7P1-7S-ZsS"/>
+                                                                </constraints>
                                                             </view>
                                                         </subviews>
                                                         <constraints>
-                                                            <constraint firstItem="F94-LQ-aZ8" firstAttribute="width" secondItem="F94-LQ-aZ8" secondAttribute="height" multiplier="1:1" id="415-Wf-666"/>
                                                             <constraint firstAttribute="width" secondItem="9da-mX-1L0" secondAttribute="height" multiplier="20:3" id="H0U-0M-GUF"/>
                                                         </constraints>
                                                     </stackView>
@@ -338,6 +352,28 @@
                         <viewLayoutGuide key="safeArea" id="p8p-iB-L5y"/>
                     </view>
                     <navigationItem key="navigationItem" title="Body" id="VxU-ge-yEn"/>
+                    <connections>
+                        <outlet property="bodyImageView" destination="1kT-KT-evt" id="mDs-9q-Bxc"/>
+                        <outletCollection property="joints" destination="mLp-MG-zdb" collectionClass="NSMutableArray" id="FtA-Rl-4YD"/>
+                        <outletCollection property="joints" destination="zCF-lT-Yta" collectionClass="NSMutableArray" id="IP4-JO-79n"/>
+                        <outletCollection property="joints" destination="ZLg-WR-HJT" collectionClass="NSMutableArray" id="GqQ-Yi-CNg"/>
+                        <outletCollection property="joints" destination="VNd-tV-b3t" collectionClass="NSMutableArray" id="LAs-np-A6x"/>
+                        <outletCollection property="joints" destination="K5n-H8-nYR" collectionClass="NSMutableArray" id="oar-Pj-7YK"/>
+                        <outletCollection property="joints" destination="isr-gp-Gu6" collectionClass="NSMutableArray" id="AXv-lb-Ulg"/>
+                        <outletCollection property="joints" destination="DC4-Mz-93e" collectionClass="NSMutableArray" id="6cS-tn-BfO"/>
+                        <outletCollection property="joints" destination="xz0-wB-wq1" collectionClass="NSMutableArray" id="qNr-4B-tdt"/>
+                        <outletCollection property="joints" destination="Aau-WP-6tC" collectionClass="NSMutableArray" id="C0r-By-ExW"/>
+                        <outletCollection property="joints" destination="IV6-b0-ZVD" collectionClass="NSMutableArray" id="rGG-uP-IX5"/>
+                        <outletCollection property="joints" destination="jyw-FE-BKx" collectionClass="NSMutableArray" id="jzA-Ie-MVu"/>
+                        <outletCollection property="joints" destination="QP7-Y4-SCl" collectionClass="NSMutableArray" id="4iD-Do-etg"/>
+                        <outletCollection property="joints" destination="YMv-Qn-Do5" collectionClass="NSMutableArray" id="gBO-UZ-wV5"/>
+                        <outletCollection property="joints" destination="co3-XL-6XZ" collectionClass="NSMutableArray" id="hRE-Zu-3Ej"/>
+                        <outletCollection property="joints" destination="1hp-P2-Mr2" collectionClass="NSMutableArray" id="QH5-2d-Orx"/>
+                        <outletCollection property="joints" destination="Gfv-lk-ZQX" collectionClass="NSMutableArray" id="1fN-xQ-P4P"/>
+                        <outletCollection property="joints" destination="wUA-78-gWl" collectionClass="NSMutableArray" id="And-Fs-8zO"/>
+                        <outletCollection property="joints" destination="1t0-aP-L18" collectionClass="NSMutableArray" id="uBQ-wW-Ely"/>
+                        <outletCollection property="joints" destination="F94-LQ-aZ8" collectionClass="NSMutableArray" id="bbv-PC-Utj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f0c-hW-s4t" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
