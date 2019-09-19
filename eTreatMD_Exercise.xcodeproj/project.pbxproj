@@ -31,6 +31,8 @@
 		822DC0782332D8F10056D788 /* PatientTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822DC0762332D8F10056D788 /* PatientTVCell.xib */; };
 		822DC07B2332D9120056D788 /* TreatmentTVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC0792332D9120056D788 /* TreatmentTVCell.swift */; };
 		822DC07C2332D9120056D788 /* TreatmentTVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 822DC07A2332D9120056D788 /* TreatmentTVCell.xib */; };
+		822DC08023333D580056D788 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC07F23333D580056D788 /* UIApplication+Extension.swift */; };
+		822DC08223333D6F0056D788 /* AlertService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC08123333D6F0056D788 /* AlertService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		822DC0762332D8F10056D788 /* PatientTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PatientTVCell.xib; sourceTree = "<group>"; };
 		822DC0792332D9120056D788 /* TreatmentTVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentTVCell.swift; sourceTree = "<group>"; };
 		822DC07A2332D9120056D788 /* TreatmentTVCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TreatmentTVCell.xib; sourceTree = "<group>"; };
+		822DC07F23333D580056D788 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		822DC08123333D6F0056D788 /* AlertService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertService.swift; sourceTree = "<group>"; };
 		B4E2A3C534CD12C8311BF52C /* Pods_eTreatMD_Exercise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_eTreatMD_Exercise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19D0C0C377E37244327EE41 /* Pods-eTreatMD_Exercise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTreatMD_Exercise.debug.xcconfig"; path = "Target Support Files/Pods-eTreatMD_Exercise/Pods-eTreatMD_Exercise.debug.xcconfig"; sourceTree = "<group>"; };
 		FDD79D14FE64A3F32800F262 /* Pods-eTreatMD_Exercise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-eTreatMD_Exercise.release.xcconfig"; path = "Target Support Files/Pods-eTreatMD_Exercise/Pods-eTreatMD_Exercise.release.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 			children = (
 				822DC06B2332C3E30056D788 /* TreatmentsService.swift */,
 				822DC0692332C3C10056D788 /* PatientsService.swift */,
+				822DC08123333D6F0056D788 /* AlertService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				822DC0532332BC480056D788 /* UIImageView+Extension.swift */,
+				822DC07F23333D580056D788 /* UIApplication+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -354,6 +360,7 @@
 				822DC06C2332C3E30056D788 /* TreatmentsService.swift in Sources */,
 				822DC0602332BFF10056D788 /* PatientInfoVC.swift in Sources */,
 				822DC0582332BF7B0056D788 /* TreatmentsVC.swift in Sources */,
+				822DC08223333D6F0056D788 /* AlertService.swift in Sources */,
 				822DC03423329C350056D788 /* eTreatMD_Exercise.xcdatamodeld in Sources */,
 				822DC04C2332A1250056D788 /* Treatment.swift in Sources */,
 				822DC0772332D8F10056D788 /* PatientTVCell.swift in Sources */,
@@ -361,6 +368,7 @@
 				822DC05A2332BF8D0056D788 /* BodyVC.swift in Sources */,
 				822DC06A2332C3C10056D788 /* PatientsService.swift in Sources */,
 				822DC05C2332BF9F0056D788 /* PatientsVC.swift in Sources */,
+				822DC08023333D580056D788 /* UIApplication+Extension.swift in Sources */,
 				822DC04E2332A1480056D788 /* Patient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
