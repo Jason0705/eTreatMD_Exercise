@@ -57,8 +57,8 @@ extension TreatmentsVC {
                 }
                 return
             }
-            self.treatments = treatments
             DispatchQueue.main.async {
+                self.treatments = treatments
                 self.treatmentsTableView.reloadData()
                 UIView.animate(withDuration: 1.0, animations: {
                     self.treatmentsTableView.refreshControl?.endRefreshing()

@@ -65,8 +65,8 @@ extension PatientsVC {
                 }
                 return
             }
-            self.patients = patients
             DispatchQueue.main.async {
+                self.patients = patients
                 self.patientsTableView.reloadData()
                 UIView.animate(withDuration: 1.0, animations: {
                     self.patientsTableView.refreshControl?.endRefreshing()

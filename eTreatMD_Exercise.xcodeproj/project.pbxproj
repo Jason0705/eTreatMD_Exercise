@@ -533,13 +533,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM7TVT93QB;
+				DEVELOPMENT_TEAM = H8F484VNTV;
 				INFOPLIST_FILE = eTreatMD_Exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jason.eTreatMD-Exercise";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jason.personalexercise.eTreatMD-Exercise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,13 +552,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = CM7TVT93QB;
+				DEVELOPMENT_TEAM = H8F484VNTV;
 				INFOPLIST_FILE = eTreatMD_Exercise/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jason.eTreatMD-Exercise";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jason.personalexercise.eTreatMD-Exercise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
