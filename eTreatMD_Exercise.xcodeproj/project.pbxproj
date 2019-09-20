@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21C783D50A62C0D8B7279E04 /* Pods_eTreatMD_Exercise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4E2A3C534CD12C8311BF52C /* Pods_eTreatMD_Exercise.framework */; };
+		820792C023344B62005AEF89 /* treatment.json in Resources */ = {isa = PBXBuildFile; fileRef = 820792BF23344B62005AEF89 /* treatment.json */; };
+		820792C223344B6C005AEF89 /* patients.json in Resources */ = {isa = PBXBuildFile; fileRef = 820792C123344B6C005AEF89 /* patients.json */; };
 		822DC02C23329C350056D788 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822DC02B23329C350056D788 /* AppDelegate.swift */; };
 		822DC03123329C350056D788 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 822DC02F23329C350056D788 /* Main.storyboard */; };
 		822DC03423329C350056D788 /* eTreatMD_Exercise.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 822DC03223329C350056D788 /* eTreatMD_Exercise.xcdatamodeld */; };
@@ -36,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		820792BF23344B62005AEF89 /* treatment.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = treatment.json; sourceTree = "<group>"; };
+		820792C123344B6C005AEF89 /* patients.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = patients.json; sourceTree = "<group>"; };
 		822DC02823329C350056D788 /* eTreatMD_Exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = eTreatMD_Exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		822DC02B23329C350056D788 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		822DC03023329C350056D788 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -80,6 +84,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		820792BE23344B2D005AEF89 /* JSONs */ = {
+			isa = PBXGroup;
+			children = (
+				820792BF23344B62005AEF89 /* treatment.json */,
+				820792C123344B6C005AEF89 /* patients.json */,
+			);
+			path = JSONs;
+			sourceTree = "<group>";
+		};
 		822DC01F23329C350056D788 = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +165,7 @@
 				822DC0482332A0880056D788 /* CustomCells */,
 				822DC0472332A0800056D788 /* Extensions */,
 				822DC0462332A06C0056D788 /* Services */,
+				820792BE23344B2D005AEF89 /* JSONs */,
 				822DC0492332A0DE0056D788 /* Reusable.swift */,
 			);
 			path = Utilities;
@@ -312,8 +326,10 @@
 			files = (
 				822DC0622332C0430056D788 /* Body.storyboard in Resources */,
 				822DC06E2332C8F40056D788 /* Treatments.storyboard in Resources */,
+				820792C223344B6C005AEF89 /* patients.json in Resources */,
 				822DC0702332CA7E0056D788 /* Patients.storyboard in Resources */,
 				822DC03923329C370056D788 /* LaunchScreen.storyboard in Resources */,
+				820792C023344B62005AEF89 /* treatment.json in Resources */,
 				822DC0782332D8F10056D788 /* PatientTVCell.xib in Resources */,
 				822DC03623329C370056D788 /* Assets.xcassets in Resources */,
 				822DC07C2332D9120056D788 /* TreatmentTVCell.xib in Resources */,

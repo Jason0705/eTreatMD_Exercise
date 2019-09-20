@@ -12,11 +12,13 @@ class PatientsService {
     static var patientsService = PatientsService()
     
     private let PATIENTS_URL_STRING = "https://test.livewithacne.com/media/steps/patients.json"
-    private let SECONDARY_PATIENTS_URL_STRING = "https://api.myjson.com/bins/zhp9h"
+//    private let SECONDARY_PATIENTS_URL_STRING = "https://api.myjson.com/bins/zhp9h"
     
     func getPatients(completion: @escaping ([Patient]?) -> Void) {
         guard let url = URL(string: PATIENTS_URL_STRING) else {
-            completion(nil)
+            getPatientsFromFile { (patients) in
+                completion(patients)
+            }
             return
         }
         
@@ -25,26 +27,51 @@ class PatientsService {
         request.setValue("Application/json", forHTTPHeaderField: "Content-Type")
         
         do {
-            URLSession.shared.dataTask(with: request) { (data, response, error) in
+            URLSession.shared.dataTask(with: request) { [weak self] (data, response, error) in
+                guard let `self` = self else { return }
                 if let error = error {
                     print("DataTask Error: \(error.localizedDescription)")
-                    completion(nil)
+                    self.getPatientsFromFile { (patients) in
+                        completion(patients)
+                    }
                 } else if let data = data {
                     do {
-//                        print("DATA: \(String(data: data, encoding: .utf8)!)")
                         let patients = try JSONDecoder().decode([Patient].self, from: data)
                         completion(patients)
                     } catch let error {
                         print("JSONDecoding Error: \(error.localizedDescription)")
-                        completion(nil)
+                        self.getPatientsFromFile { (patients) in
+                            completion(patients)
+                        }
                     }
                 } else {
-                    completion(nil)
+                    self.getPatientsFromFile { (patients) in
+                        completion(patients)
+                    }
                 }
                 }.resume()
         } catch let error {
             print("JSONSerialization Error: \(error.localizedDescription)")
-            completion(nil)
+            getPatientsFromFile { (patients) in
+                completion(patients)
+            }
+        }
+    }
+    
+    private func getPatientsFromFile(completion: @escaping ([Patient]?) -> Void) {
+        if let path = Bundle.main.path(forResource: "patients", ofType: "json") {
+            do {
+                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
+                do {
+                    let patients = try JSONDecoder().decode([Patient].self, from: data)
+                    completion(patients)
+                } catch let error {
+                    print("JSONDecoding Error: \(error.localizedDescription)")
+                    completion(nil)
+                }
+            } catch {
+                completion(nil)
+            }
         }
     }
     
